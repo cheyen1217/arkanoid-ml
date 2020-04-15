@@ -58,11 +58,11 @@ def ml_loop():
                
             
              
-            if (tem[0]==0 or tem[0]==195) and (scene_info.ball[1]>tem[1]):
-                if (scene_info.ball[0]-tem[0])!=0 :          
-                    slope=(scene_info.ball[1]-tem[1])/(scene_info.ball[0]-tem[0])    
-                if slope!=0:
-                    x=(400-scene_info.ball[1])/slope +scene_info.ball[0]
+            #if (tem[0]==0 or tem[0]==195) and (scene_info.ball[1]>tem[1]):
+            if (scene_info.ball[0]-tem[0])!=0 :          
+                slope=(scene_info.ball[1]-tem[1])/(scene_info.ball[0]-tem[0])    
+            if slope!=0:
+                x=(400-scene_info.ball[1])/slope +scene_info.ball[0]
             elif (scene_info.ball[1]<tem[1]):
                 x = 100
             
