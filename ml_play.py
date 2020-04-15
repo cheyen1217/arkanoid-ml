@@ -78,7 +78,7 @@ def ml_loop():
             if kkk == 0:
                 x = float(x)
                 x += 2.25
-            else
+            else:
                 x = float(x)
                 x -= 2.25
         
