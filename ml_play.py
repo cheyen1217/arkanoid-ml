@@ -6,6 +6,7 @@ import games.arkanoid.communication as comm
 from games.arkanoid.communication import ( \
     SceneInfo, GameStatus, PlatformAction
 )
+import random
 
 def ml_loop():
     """
@@ -71,7 +72,15 @@ def ml_loop():
                     x = 390-x
                 elif x<0 :
                     x = -x      
-                     
+            
+            
+            kkk = randint(0,1)
+            if kkk == 0:
+                x = float(x)
+                x += 2.25
+            else
+                x = float(x)
+                x -= 2.25
         
             if scene_info.platform[0] >x-20:
                 comm.send_instruction(scene_info.frame, PlatformAction.MOVE_LEFT)
