@@ -74,7 +74,7 @@ def ml_loop():
                     x = -x      
             
             
-            kkk = randint(0,1)
+            kkk = random.randint(0,1)
             if kkk == 0:
                 x = float(x)
                 x += 2.25
